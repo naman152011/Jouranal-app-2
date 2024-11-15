@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gratitude Journal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gratitude Journal</h1>
+    <div id="prompt"></div>
+
+    <!-- Mood Selector -->
+    <label for="mood">Today's Mood:</label>
+    <select id="mood">
+      <option value="😊">😊 Happy</option>
+      <option value="😐">😐 Neutral</option>
+      <option value="😔">😔 Sad</option>
+    </select>
+
+    <!-- Journal Entry -->
+    <textarea id="journalInput" placeholder="What are you grateful for today?"></textarea>
+    <button onclick="addEntry()">Add Entry</button>
+
+    <!-- Journal Entries -->
+    <h2>Your Gratitude Entries</h2>
+    <div id="journalEntries"></div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
